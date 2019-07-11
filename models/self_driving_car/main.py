@@ -9,7 +9,8 @@
 
 from prep_terrain_data import makeTerrainData
 from class_vis import prettyPicture, output_image
-from ClassifyNB import classify, NBAccuracy
+# from ClassifyNB import classify, NBAccuracy
+from ClassifyDT import classify
 
 import numpy as np
 import pylab as pl
@@ -33,7 +34,7 @@ prettyPicture(clf, features_test, labels_test)
 output_image("test.png", "png", open("test.png", "rb").read())
 
 ### compute accuracy of model
-print 'accuracy: {}'.format(NBAccuracy(features_train, labels_train, features_test, labels_test))
+# print 'accuracy: {}'.format(NBAccuracy(features_train, labels_train, features_test, labels_test))
 
 
 
