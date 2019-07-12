@@ -34,7 +34,7 @@ prettyPicture(clf, features_test, labels_test)
 output_image("test.png", "png", open("test.png", "rb").read())
 
 ### compute accuracy of model
-# print 'accuracy: {}'.format(NBAccuracy(features_train, labels_train, features_test, labels_test))
+print 'accuracy: {}'.format(clf.score(features_test, labels_test))
 
 
 
